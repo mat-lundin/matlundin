@@ -1,23 +1,29 @@
-import './App.css';
+// import React, { useState } from "react";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-function App() {
+import Footer from "./components/footer";
+import Navbar from "./components/nav";
+import Home from './components/home';
+import Music from './pages/music';
+import About from './pages/about';
+import Resume from './pages/resume';
+
+export default function App() {
+//  const [currentPage, setCurrentPage] = useState('home');
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path='/about' element={<About />}></Route>
+          <Route path='/music' element={<Music />}></Route>
+          <Route path='/resume' element={<Resume />}></Route>
+        </Routes>
+      </BrowserRouter>
+      <Footer />
+    </main>
   );
 }
 
-export default App;
+
