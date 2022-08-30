@@ -14,8 +14,6 @@ const home = () => {
           <Card.Link href="https://github.com/mat-lundin">Github</Card.Link>
         </Card.Body>
       </Card>
-        
-        
     )
 }
 
