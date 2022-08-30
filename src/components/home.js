@@ -2,6 +2,7 @@ import Card from 'react-bootstrap/Card';
 
 const home = () => {
     return (
+        // move card using margins, etc. or get rid of card in favor of straight divs
         <Card style={{ width: '18rem' }}>
             <Card.Img variant="top" src="images/headshot.jpeg" />
         <Card.Body>

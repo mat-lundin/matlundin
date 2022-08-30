@@ -5,7 +5,10 @@ import Navbar from 'react-bootstrap/Navbar'
 
 const nav = () => {
   return (
-    <Navbar collapseOnSelect expand="md" style={{  backgroundSize: 'cover' }}>
+    // replace brand image
+    // left justify nav options
+    // make background a gradient from dark on the left to light on the right so you can see the options once they are left-justified
+    <Navbar collapseOnSelect expand="md" style={{  backgroundSize: 'cover', backgroundColor:"gray" }}>
       <Navbar.Brand style={{ margin: 0, padding: 0 }} href="/"><img src="images/header.png" alt="Mat Lundin" width="80%" /></Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" className="custom-toggler" />
       <Navbar.Collapse className="collapse navbar-collapse" id="navbarCollapse">
