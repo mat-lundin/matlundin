@@ -6,7 +6,7 @@ import Navbar from 'react-bootstrap/Navbar'
 const nav = () => {
   return (
     <Navbar collapseOnSelect expand="md" style={{ backgroundImage: 'url(images/flower.jpeg)', backgroundSize: 'cover' }}>
-      <Navbar.Brand style={{ margin: 0, padding: 0 }} href="/"><img src="images/header.png" alt="Spiral Stairs" width="80%" /></Navbar.Brand>
+      <Navbar.Brand style={{ margin: 0, padding: 0 }} href="/"><img src="images/header.png" alt="Mat Lundin" width="80%" /></Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" className="custom-toggler" />
       <Navbar.Collapse className="collapse navbar-collapse" id="navbarCollapse">
 
