@@ -1,27 +1,53 @@
 [
     {
         "artist": "Panes and Sills",
-        "album": "Panes and Sills",
-        "spotUrl": "https://open.spotify.com/album/2hgbNusNjefx1ESyI2hwFz?si=cwGcCK-wRLG50p4DgU-nbA"
+        "title": "Panes and Sills",
+        "image":"https://f4.bcbits.com/img/a1055323555_10.jpg",
+        "bandcampUrl":"https://panesandsills.bandcamp.com/album/panes-and-sills",
+        "spotUrl": "https://open.spotify.com/album/2hgbNusNjefx1ESyI2hwFz?si=cwGcCK-wRLG50p4DgU-nbA",
+        "spotEmbed":"https://open.spotify.com/embed/album/2hgbNusNjefx1ESyI2hwFz?utm_source=generator"
     },
     {
         "artist": "Blue Plutos",
-        "album": "Moon Language",
-        "spotUrl": "https://open.spotify.com/album/6E8Tqb9XI0Wi5XCK07wH2L?si=Nqzx1cHoSa6L3MA-y2R52A"
+        "title": "Come Back This Way",
+        "image":"https://f4.bcbits.com/img/a0138506597_10.jpg",
+        "bandcampUrl":"https://blueplutos.bandcamp.com/album/come-back-this-way",
+        "spotUrl": "https://open.spotify.com/album/5n9nFHMBUDF9iurWAlDgve?si=o0i_cSwtThKBMAOrTjl5pA",
+        "spotEmbed":"https://open.spotify.com/embed/album/5n9nFHMBUDF9iurWAlDgve?utm_source=generator"
     },
     {
         "artist": "Blue Plutos",
-        "album": "Dennett Street",
-        "spotUrl": "https://open.spotify.com/album/592WViTn9RDVJVj2ScWcly?si=QoVi0QRgRH2MOJLAUk39aw"
+        "title": "Moon Language",
+        "image":"https://f4.bcbits.com/img/a0138506597_10.jpg",
+        "bandcampUrl":"https://blueplutos.bandcamp.com/album/moon-language",
+        "spotUrl": "https://open.spotify.com/album/6E8Tqb9XI0Wi5XCK07wH2L?si=Nqzx1cHoSa6L3MA-y2R52A",
+        "spotEmbed":"https://open.spotify.com/embed/album/6E8Tqb9XI0Wi5XCK07wH2L?utm_source=generator"
+    },
+    {
+        "artist": "Blue Plutos",
+        "title": "Dennett Street",
+        "image":"https://f4.bcbits.com/img/a3448655414_10.jpg",
+        "bandcampUrl":"https://blueplutos.bandcamp.com/album/dennett-st",
+        "spotUrl": "https://open.spotify.com/album/592WViTn9RDVJVj2ScWcly?si=QoVi0QRgRH2MOJLAUk39aw",
+        "spotEmbed":"https://open.spotify.com/embed/album/592WViTn9RDVJVj2ScWcly?utm_source=generator"
     },
     {
         "artist": "Boys Room",
-        "album": "Big Bad Us",
-        "spotUrl": "https://open.spotify.com/album/5O3bfXF4kJdqxagn7WMpHo?si=Vo8284gYT9myDo1ijW4UeA"
+        "title": "Wear a Mask",
+        "image":"https://f4.bcbits.com/img/a3710709344_10.jpg",
+        "bandcampUrl":"https://boysroom.bandcamp.com/album/wear-a-mask",
+        "spotUrl": "https://open.spotify.com/album/1VNCF0ORWC1bk0Xt4gTQJV?si=vnVapqSDRP-5QxwZfFGuiA",
+        "spotEmbed":"https://open.spotify.com/embed/album/1VNCF0ORWC1bk0Xt4gTQJV?utm_source=generator"
+        
     },
     {
         "artist": "Boys Room",
-        "album": "Wear a Mask",
-        "spotUrl": "https://open.spotify.com/album/1VNCF0ORWC1bk0Xt4gTQJV?si=vnVapqSDRP-5QxwZfFGuiA"
+        "title": "Big Bad Us",
+        "image":"https://f4.bcbits.com/img/a3292527795_10.jpg",
+        "bandcampUrl":"https://boysroom.bandcamp.com/album/big-bad-us",
+        "spotUrl": "https://open.spotify.com/album/5O3bfXF4kJdqxagn7WMpHo?si=Vo8284gYT9myDo1ijW4UeA",
+        "spotEmbed":"https://open.spotify.com/embed/album/5O3bfXF4kJdqxagn7WMpHo?utm_source=generator"
+        
     }
+
 ]

@@ -1,11 +1,35 @@
-const music = () => {
-    return (
-        
+import React from "react";
+import {Container, Row} from 'react-bootstrap'
+import musicData from '../music.json'
+import RBCarousel from "react-bootstrap-carousel";
+import "react-bootstrap-carousel/dist/react-bootstrap-carousel.css";
 
-            <p>Music Page</p>
-        
-        
-    )
+export default function Music(){
+   return( <Container flex="true" style = {{color:"black"}}>
+         <RBCarousel           
+            animation={true}
+            autoplay={false}
+              slideshowSpeed={2000}
+              defaultActiveIndex={0}
+              version={4}
+            >
+
+        {musicData.map((album)=>{
+           return (
+            <div key = {album.title} style={{textAlign: 'center', marginTop: '5%'}}>
+              <h4 style={{textAlign: 'center', marginTop: '10%'}}>{album.artist}</h4>
+              <h3 style={{textAlign: 'center', marginBottom: '10%'}}>{album.title}</h3>
+              {/* don't display link if not on bandcamp */}
+              {album.bandcampUrl === "" ? null : <h3 style={{marginBottom: '10%'}}><a href={album.bandcampUrl} target="_blank"><img src="/images/bandcamp-logo-svgrepo-com.svg"></img></a></h3>}
+              <img src={album.image} width='30%' alt={album.title}></img>
+              <Row>
+              <iframe title={album.title} style={{textAlign: 'center', fontFamily: "Work Sans", margin: '5% 15%', width: '70%', padding: '0%'}} src={album.spotEmbed} height="80" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+               </Row>
+            </div>
+           )
+        })}
+
+      </RBCarousel>
+    </Container>
+   )
 }
-
-export default music

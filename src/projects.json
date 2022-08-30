@@ -1,17 +1,17 @@
 [{
-    "name":"Sheltr",
-    "description": "A mobile first swiping app for finding your next rescue pet!",
-    "url": "https://sheltr-app.herokuapp.com/",
-    "repoUrl": "https://github.com/mat-lundin/sheltr",
-    "image": "/images/sheltr.png"
-
-},
-{
     "name":"Spiral Stairs Official Website",
     "description": "Official Website for Spiral Stairs, member of legendary indie rock band Pavement!",
     "url": "https://spiralstairsofficial.com",
     "repoUrl": "https://github.com/chuck2076/spiral-stairs-site",
     "image": "/images/spiralstairs.png"
+
+},
+{
+    "name":"Sheltr",
+    "description": "A mobile first swiping app for finding your next rescue pet!",
+    "url": "https://sheltr-app.herokuapp.com/",
+    "repoUrl": "https://github.com/mat-lundin/sheltr",
+    "image": "/images/sheltr.png"
 
 },
 {
