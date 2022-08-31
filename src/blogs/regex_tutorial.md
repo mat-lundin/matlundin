@@ -65,7 +65,3 @@ This regex does not utilize any flags.
 ### Character Escapes
 
 Character escapes are how we tell our regular expression to look for a specific literal character. We indicate this by surrounding the literal character we want to match in backslashes ( `\\` ). In this example, we utilize a character escape here: `\/\`. This tells the regex that we want to look for literally the character `/`.
-
-## Author
-
-Mat Lundin worked in technology for ten years at multiple companies until 2021, when he enrolled in the Coding Bootcamp at the University of Texas, Austin. Please check out his [Github](https://github.com/mat-lundin)!
