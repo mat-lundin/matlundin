@@ -23,18 +23,21 @@ const Blog = () => {
     })
     return (
         <>
-        <div>
+        {/* <div>
             <Markdown>
                 {post}
             </Markdown>
-        </div>
+        </div> */}
 
-        {/* <h2>As I learn and grow as a developer, I'll write my thoughts here:</h2>
-        <Accordion defaultActiveKey="0">
+        <h2>As I learn and grow as a developer, I'll write my thoughts here:</h2>
+{/* to add an already open item, do <Accordion defaultActiveKey="0"> */}
+        <Accordion>
       <Accordion.Item eventKey="0">
-        <Accordion.Header>Accordion Item #1</Accordion.Header>
+        <Accordion.Header>How Does The Regular Expression To Find an HTML Tag Work?</Accordion.Header>
         <Accordion.Body>
-        <ReactMarkdown>{postStr}</ReactMarkdown>
+        <Markdown>
+                {post}
+            </Markdown>
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="1">
@@ -49,7 +52,7 @@ const Blog = () => {
           culpa qui officia deserunt mollit anim id est laborum.
         </Accordion.Body>
       </Accordion.Item>
-    </Accordion> */}
+    </Accordion>
         </>
     )
 }
