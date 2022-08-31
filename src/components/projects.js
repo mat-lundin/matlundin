@@ -6,7 +6,8 @@ import projects from '../projects.json';
 
 const dev = () => {
     return (
-
+        <>
+        <h2>Coding Projects I've Worked On</h2>
         <Accordion defaultActiveKey="0">
             {projects.map((project) => {
                 return (
@@ -20,6 +21,7 @@ const dev = () => {
                     </Accordion.Item>)
             })}
         </Accordion>
+        </>
     )
 }
 

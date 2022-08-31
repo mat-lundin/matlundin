@@ -7,7 +7,9 @@ import Button from 'react-bootstrap/Button';
 
 const blog = () => {
     return (
-        <></>
+        <>
+        <h2>As I learn and grow as a developer, I'll write my thoughts here:</h2>
+        </>
 
         // <Accordion defaultActiveKey="0">
         //     {projects.map((project) => {
