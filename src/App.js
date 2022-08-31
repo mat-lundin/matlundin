@@ -8,6 +8,7 @@ import Music from './pages/music';
 import About from './pages/about';
 import Resume from './pages/resume';
 import Projects from './pages/projects';
+import Blog from './pages/blog';
 
 export default function App() {
 //  const [currentPage, setCurrentPage] = useState('home');
@@ -21,6 +22,7 @@ export default function App() {
           <Route path='/music' element={<Music />}></Route>
           <Route path='/resume' element={<Resume />}></Route>
           <Route path = '/dev' element={<Projects />}></Route>
+          <Route path = '/blog' element={<Blog />}></Route>
         </Routes>
       </BrowserRouter>
       <Footer />

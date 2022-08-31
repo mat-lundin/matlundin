@@ -18,6 +18,10 @@ const nav = () => {
             color: isActive ? '#FFFFFF' : '#1D253F', fontSize: '2em'
           })}>Projects&nbsp;</NavLink>
 
+          <NavLink data-toggle="collapse" data-target="#navbarCollapse" className="nav-link" activeclassname="true" to='/blog' style={({ isActive }) => ({
+            color: isActive ? '#FFFFFF' : '#1D253F', fontSize: '2em'
+          })}>Tech Blog&nbsp;</NavLink>
+
           <NavLink data-toggle="collapse" data-target="#navbarCollapse" className="nav-link" activeclassname="true" to='/music' style={({ isActive }) => ({
             color: isActive ? '#FFFFFF' : '#1D253F', fontSize: '2em'
           })}>Music&nbsp;</NavLink>
