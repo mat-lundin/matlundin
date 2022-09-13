@@ -22,14 +22,8 @@ const Blog = () => {
         })
     })
     return (
-        <>
-        {/* <div>
-            <Markdown>
-                {post}
-            </Markdown>
-        </div> */}
-
-        <h2>As I learn and grow as a developer, I'll write my thoughts here:</h2>
+        <div style={{margin:'6%'}}>
+        <h2 style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>As I learn and grow as a developer, I'll write my thoughts here:</h2>
 {/* to add an already open item, do <Accordion defaultActiveKey="0"> */}
         <Accordion>
       <Accordion.Item eventKey="0">
@@ -53,7 +47,7 @@ const Blog = () => {
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>
-        </>
+        </div>
     )
 }
 

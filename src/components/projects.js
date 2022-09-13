@@ -6,8 +6,8 @@ import projects from '../projects.json';
 
 const dev = () => {
     return (
-        <>
-        <h2>Coding Projects I've Worked On</h2>
+        <div style={{margin: '6%'}}>
+        <h2 style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>Coding Projects I've Worked On</h2>
         <Accordion defaultActiveKey="0">
             {projects.map((project) => {
                 return (
@@ -15,13 +15,13 @@ const dev = () => {
                         <Accordion.Header>{project.name} - {project.description}</Accordion.Header>
                         <Accordion.Body>
                             <Image src={project.image} fluid="1" thumbnail="1" style={{ height: "20%", width: "20%" }}></Image>
-                            <p><Button>Visit</Button>
+                            <p><Button style={{margin: '.6%'}}>Visit</Button>
                             <Button>Github</Button></p>
                         </Accordion.Body>
                     </Accordion.Item>)
             })}
         </Accordion>
-        </>
+        </div>
     )
 }
 
