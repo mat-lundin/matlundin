@@ -4,7 +4,7 @@ const home = () => {
     return (
         // move card using margins, etc. or get rid of card in favor of straight divs
         <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
-        <Card style={{ width: '18rem', margin: '2%' }}>
+        <Card style={{ width: '28rem', margin: '2%' }}>
             <Card.Img variant="top" src="images/headshot.jpeg" />
         <Card.Body>
           <Card.Title>Mat Lundin</Card.Title>

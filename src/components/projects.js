@@ -12,11 +12,11 @@ const dev = () => {
             {projects.map((project) => {
                 return (
                     <Accordion.Item eventKey={project.name} key={project.name}>
-                        <Accordion.Header>{project.name} - {project.description}</Accordion.Header>
-                        <Accordion.Body>
-                            <Image src={project.image} fluid="1" thumbnail="1" style={{ height: "20%", width: "20%" }}></Image>
-                            <p><Button style={{margin: '.6%'}}>Visit</Button>
-                            <Button>Github</Button></p>
+                        <Accordion.Header>{project.name} <br></br> {project.description}</Accordion.Header>
+                        <Accordion.Body style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
+                            <Image src={project.image} fluid="1" thumbnail="1" style={{ height: "20%", width: "20%" }} alt={project.name}></Image>
+                            <Button style={{margin: '.6%'}}>Visit</Button>
+                            <Button>Github</Button>
                         </Accordion.Body>
                     </Accordion.Item>)
             })}
