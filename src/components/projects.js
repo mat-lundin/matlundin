@@ -12,7 +12,8 @@ const dev = () => {
             {projects.map((project) => {
                 return (
                     <Accordion.Item eventKey={project.name} key={project.name}>
-                        <Accordion.Header>{project.name} <br></br> {project.description}</Accordion.Header>
+                        {/* align name and description like Pipe Dreams looks? */}
+                        <Accordion.Header><p><h5>{project.name}</h5></p> <p>{project.description}</p> </Accordion.Header>
                         <Accordion.Body style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
                             <Image src={project.image} fluid="1" thumbnail="1" style={{ height: "20%", width: "20%" }} alt={project.name}></Image>
                             <Button style={{margin: '.6%'}}>Visit</Button>
