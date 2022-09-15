@@ -35,7 +35,7 @@ A quantifier is a value that modifies the value immediately before it.
 
 This regex utilizes the quantifier `+` which establishes that we need to match the previous value one or more times. In this regex, we see `([a-z]+)` which means that we are looking for a lowercase letter, a through z, at least once but potentially many times. This comes directly after `^<` so we are looking for a string that starts with `<` and is followed by one or more characters in a row, a through z.
 
-This regex also utitlizes the quantifier `*` which will act as a "wildcard" meaning that it will look for the previous value zero or more times. That means that if the value appears in the match or not, the matching will not be affected.
+This regex also utilizes the quantifier `*` which will act as a "wildcard" meaning that it will look for the previous value zero or more times. That means that if the value appears in the match or not, the matching will not be affected.
 
 ### Grouping Constructs
 

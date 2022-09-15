@@ -4,6 +4,8 @@ import Image from 'react-bootstrap/Image';
 import Button from 'react-bootstrap/Button';
 import projects from '../projects.json';
 
+// have a modal or a drawer with the screenshot and links instead of accordion
+// once you open the project the pop up will have an X to quit, link buttons, and you can use the arrow keys to go between projects in the carousel
 const dev = () => {
     return (
         <div style={{margin: '6%'}}>
