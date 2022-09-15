@@ -6,6 +6,7 @@ import projects from '../projects.json';
 
 // have a modal or a drawer with the screenshot and links instead of accordion
 // once you open the project the pop up will have an X to quit, link buttons, and you can use the arrow keys to go between projects in the carousel
+// replace accordion with table of name and image on left, description in middle, links on right
 const dev = () => {
     return (
         <div style={{margin: '6%'}}>
@@ -18,8 +19,8 @@ const dev = () => {
                         <Accordion.Header><p><h5>{project.name}</h5></p> <p>{project.description}</p> </Accordion.Header>
                         <Accordion.Body style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
                             <Image src={project.image} fluid="1" thumbnail="1" style={{ height: "20%", width: "20%" }} alt={project.name}></Image>
-                            <Button style={{margin: '.6%'}}>Visit</Button>
-                            <Button>Github</Button>
+                            <Button style={{margin: '.6%'} } href={project.url}>Visit</Button>
+                            <Button href={project.repoUrl}>Github</Button>
                         </Accordion.Body>
                     </Accordion.Item>)
             })}
