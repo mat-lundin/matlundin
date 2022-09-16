@@ -11,7 +11,7 @@ const dev = () => {
     return (
         <div style={{margin: '6%'}}>
         <h2 style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>Coding Projects I've Worked On</h2>
-        <Table striped>
+        <Table striped responsive>
       <thead>
         <tr>
           <th>img</th>
@@ -24,7 +24,7 @@ const dev = () => {
         {projectData.map((project)=>{
             return(
                 <tr key={project.name}>
-                    {/* <td><Image>{project.image}</Image></td> */}
+                    <td><Image src={project.image} fluid  style={{ height: "20%", width: "20%" }} alt={project.name}></Image></td>
                     <td>{project.name}</td>
                     <td>{project.description}</td>
                     <td><Button>Visit</Button><Button>Github</Button></td>
