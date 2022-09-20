@@ -28,6 +28,7 @@ const dev = () => {
                     {projectData.map((project) => {
                         const renderTooltip = (props) => (
                             <Tooltip id="button-tooltip" {...props}>
+                                <Button variant="dark" width="10%"><Image src={project.image} href={project.url} target="_blank" fluid style={{ margin: 0 }} alt={project.name}></Image></Button>
                                 {project.name}
                             </Tooltip>)
                         return (
@@ -37,7 +38,7 @@ const dev = () => {
                                     delay={{ show: 250, hide: 400 }}
                                     overlay={renderTooltip}
                                 >
-                                    <Image src={project.image} fluid style={{ margin: 0 }} alt={project.name}></Image>
+                                    <Button variant="light" href={project.url}><Image src={project.image} target="_blank"  fluid style={{ margin: 0 }} alt={project.name}></Image></Button>
                                 </OverlayTrigger></td>
                                 <td>{project.name}</td>
                                 <td>{project.description}</td>
