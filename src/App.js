@@ -9,6 +9,7 @@ import About from './pages/about';
 import Resume from './pages/resume';
 import Projects from './pages/projects';
 import Blog from './pages/blog';
+import ScrollButton from './components/ScrollButton';
 
 export default function App() {
 //  const [currentPage, setCurrentPage] = useState('home');
@@ -26,6 +27,7 @@ export default function App() {
         </Routes>
       </BrowserRouter>
       <Footer />
+      <ScrollButton />
     </main>
   );
 }
