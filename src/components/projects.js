@@ -13,17 +13,10 @@ import Tooltip from 'react-bootstrap/Tooltip';
 const dev = () => {
 
     return (
-        <div style={{ margin: '6%' }}>
-            <h2 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>Coding Projects I've Worked On</h2>
+        <>
+        <h2 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', margin:"2%" }}>Coding Projects I've Worked On</h2>
+        <div style={{ margin: '20%', marginTop:"1%" }}>
             <Table striped responsive>
-                <thead>
-                    <tr>
-                        <th width="11%">img</th>
-                        <th>name</th>
-                        <th>desc</th>
-                        <th width="11%">links</th>
-                    </tr>
-                </thead>
                 <tbody>
                     {projectData.map((project) => {
                         const renderTooltip = (props) => (
@@ -33,16 +26,16 @@ const dev = () => {
                             </Tooltip>)
                         return (
                             <tr key={project.name}>
-                                <td>    <OverlayTrigger
+                                <td width="11%">    <OverlayTrigger
                                     placement="right"
                                     delay={{ show: 250, hide: 400 }}
                                     overlay={renderTooltip}
                                 >
-                                    <Button variant="light" href={project.url}><Image src={project.image} target="_blank"  fluid style={{ margin: 0 }} alt={project.name}></Image></Button>
+                                    <Button variant="light" href={project.url}><Image src={project.image} target="_blank" fluid style={{ margin: 0 }} alt={project.name}></Image></Button>
                                 </OverlayTrigger></td>
-                                <td>{project.name}</td>
-                                <td>{project.description}</td>
-                                <td><Button style={{ margin: "1%" }}>Visit</Button><Button>Github</Button></td>
+                                <td width="11%" style={{ fontWeight: 'bold' }}>{project.name}</td>
+                                <td width="30%">{project.description}</td>
+                                <td width="13%"><Button href={project.repoUrl} target="_blank">Github</Button><Button style={{ margin: "2%" }} href={project.url} target="_blank">Visit</Button></td>
                             </tr>
                         )
                     })}
@@ -66,6 +59,7 @@ const dev = () => {
                 </tbody>
             </Table>
         </div>
+        </>
     )
 }
 

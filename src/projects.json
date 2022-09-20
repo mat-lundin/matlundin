@@ -1,14 +1,21 @@
 [{
     "name":"Spiral Stairs Official Website",
-    "description": "Official Website for Spiral Stairs, member of legendary indie rock band Pavement!",
+    "description": "Official Website for Spiral Stairs, member of legendary indie rock band Pavement! Built using React.js",
     "url": "https://spiralstairsofficial.com",
     "repoUrl": "https://github.com/chuck2076/spiral-stairs-site",
     "image": "/images/spiralstairs.png"
 
 },
 {
+    "name":"My Portfolio",
+    "description": "You're looking at it! Built using React.js",
+    "url": "",
+    "repoUrl": "https://github.com/mat-lundin/my-portfolio-v2",
+    "image": "/images/spiralstairs.png"
+},
+{
     "name":"Sheltr",
-    "description": "A mobile first swiping app for finding your next rescue pet!",
+    "description": "A mobile first swiping app for finding your next rescue pet! Built using React.js",
     "url": "https://sheltr-app.herokuapp.com/",
     "repoUrl": "https://github.com/mat-lundin/sheltr",
     "image": "/images/sheltr.png"
