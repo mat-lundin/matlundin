@@ -25,6 +25,7 @@ const Blog = () => {
           .catch(err => console.log(err))
       })
   })
+  // footer positioning based on https://kiranworkspace.com/how-to-stick-footer-to-bottom-of-page/
   return (
     <div style={{background: 'linear-gradient(to bottom, #808080 0%, #FFFFFF 100%)', flex:1}}>
         <h2 style={{ display: 'flex', flexDirection:'column', minHeight:'100vh', justifyContent: 'center', alignItems: 'center', padding:"2%" }}>As I grow and learn as a developer, I'll write my thoughts here</h2>
