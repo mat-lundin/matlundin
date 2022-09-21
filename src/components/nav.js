@@ -9,9 +9,9 @@ const nav = () => {
     // replace brand image
     // make background a gradient from dark on the left to light on the right so you can see the options once they are left-justified
     <Navbar collapseOnSelect expand="md" style={{ backgroundSize: 'cover', backgroundColor: "gray" }}>
-      <Navbar.Brand style={{ margin: 10, padding: 0, color: "#FFFFFF", fontSize: "2.5em" }} href="/" >Mat Lundin</Navbar.Brand>
+      <Navbar.Brand style={{ margin: 10, padding: 0, paddingLeft:"3%", color: "#FFFFFF", fontSize: "2.5em" }} href="/" >Mat Lundin</Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" className="custom-toggler" />
-      <Navbar.Collapse className="collapse navbar-collapse" id="navbarCollapse">
+      <Navbar.Collapse className="collapse navbar-collapse" id="navbarCollapse" style={{paddingRight:"3%"}}>
 
         <Nav className="justify-content-end" style={{ width: "100%" }}>
           <NavLink data-toggle="collapse" data-target="#navbarCollapse" className="nav-link" activeclassname="true" to='/dev' style={({ isActive }) => ({
