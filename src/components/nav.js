@@ -1,7 +1,13 @@
 import { NavLink } from "react-router-dom";
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
-
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+import Button from 'react-bootstrap/Button';
+// import { FaHome } from 'react-icons/fa';
+import { IoHome } from "react-icons/io5";
+import { IoListOutline } from "react-icons/io5";
+import { IoNewspaperOutline } from "react-icons/io5";
+import { IoMusicalNoteOutline } from "react-icons/io5";
+import { IoDocumentTextOutline } from "react-icons/io5";
 
 
 const nav = () => {
@@ -14,21 +20,26 @@ const nav = () => {
       <Navbar.Collapse className="collapse navbar-collapse" id="navbarCollapse" style={{paddingRight:"3%"}}>
 
         <Nav className="justify-content-end" style={{ width: "100%" }}>
+
+        <NavLink data-toggle="collapse" data-target="#navbarCollapse" className="nav-link" activeclassname="true" to='/' style={({ isActive }) => ({
+            color: isActive ? '#FFFFFF' : '#1D253F', fontSize: '2em'
+          })}><IoHome></IoHome>Home</NavLink>
+
           <NavLink data-toggle="collapse" data-target="#navbarCollapse" className="nav-link" activeclassname="true" to='/dev' style={({ isActive }) => ({
             color: isActive ? '#FFFFFF' : '#1D253F', fontSize: '2em'
-          })}>Projects&nbsp;</NavLink>
+          })}><IoListOutline></IoListOutline>Projects&nbsp;</NavLink>
 
           <NavLink data-toggle="collapse" data-target="#navbarCollapse" className="nav-link" activeclassname="true" to='/blog' style={({ isActive }) => ({
             color: isActive ? '#FFFFFF' : '#1D253F', fontSize: '2em'
-          })}>Tech Blog&nbsp;</NavLink>
+          })}><IoNewspaperOutline></IoNewspaperOutline>Tech Blog&nbsp;</NavLink>
 
           <NavLink data-toggle="collapse" data-target="#navbarCollapse" className="nav-link" activeclassname="true" to='/music' style={({ isActive }) => ({
             color: isActive ? '#FFFFFF' : '#1D253F', fontSize: '2em'
-          })}>Music&nbsp;</NavLink>
+          })}><IoMusicalNoteOutline></IoMusicalNoteOutline>Music&nbsp;</NavLink>
 
           <NavLink data-toggle="collapse" data-target="#navbarCollapse" className="nav-link" activeclassname="true" to='/resume' style={({ isActive }) => ({
             color: isActive ? '#FFFFFF' : '#1D253F', fontSize: '2em'
-          })}>Resume&nbsp;</NavLink>
+          })}><IoDocumentTextOutline></IoDocumentTextOutline>Resume&nbsp;</NavLink>
         </Nav>
 
       </Navbar.Collapse>
