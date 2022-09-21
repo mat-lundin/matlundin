@@ -4,7 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Button from 'react-bootstrap/Button';
 // import { FaHome } from 'react-icons/fa';
 import { IoHome } from "react-icons/io5";
-import { IoListOutline } from "react-icons/io5";
+import { IoCodeSlashOutline } from "react-icons/io5";
 import { IoNewspaperOutline } from "react-icons/io5";
 import { IoMusicalNoteOutline } from "react-icons/io5";
 import { IoDocumentTextOutline } from "react-icons/io5";
@@ -27,7 +27,7 @@ const nav = () => {
 
           <NavLink data-toggle="collapse" data-target="#navbarCollapse" className="nav-link" activeclassname="true" to='/dev' style={({ isActive }) => ({
             color: isActive ? '#FFFFFF' : '#1D253F', fontSize: '2em'
-          })}><IoListOutline></IoListOutline>Projects&nbsp;</NavLink>
+          })}><IoCodeSlashOutline></IoCodeSlashOutline>Projects&nbsp;</NavLink>
 
           <NavLink data-toggle="collapse" data-target="#navbarCollapse" className="nav-link" activeclassname="true" to='/blog' style={({ isActive }) => ({
             color: isActive ? '#FFFFFF' : '#1D253F', fontSize: '2em'
