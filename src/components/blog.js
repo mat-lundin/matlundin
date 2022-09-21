@@ -1,14 +1,8 @@
-// try accordion with react-markdown https://blog.logrocket.com/how-to-safely-render-markdown-using-react-markdown/
-// turn github gists into blog posts to start
 import Accordion from 'react-bootstrap/Accordion';
-// import Image from 'react-bootstrap/Image';
-// import Button from 'react-bootstrap/Button';
-import blogpost from '../blogs/regex_tutorial.md';
 import Markdown from 'markdown-to-jsx';
 import React, { useState, useEffect } from 'react';
 
-// https://dev.to/anobjectisa/how-to-dynamically-load-markdown-files-in-react-markdown-to-jsx-53fl
-// https://www.npmjs.com/package/markdown-to-jsx
+// concept from https://dev.to/anobjectisa/how-to-dynamically-load-markdown-files-in-react-markdown-to-jsx-53fl
 const Blog = () => {
   const [post0, setPost0] = useState('')
   const [post1, setPost1] = useState('')
@@ -32,8 +26,9 @@ const Blog = () => {
       })
   })
   return (
-    <div style={{ margin: '6%' }}>
-      <h2 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>As I learn and grow as a developer, I'll write my thoughts here:</h2>
+    <>
+        <h2 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', margin:"2%" }}>As I grow and learn as a developer, I'll write my thoughts here</h2>
+    <div style={{ margin: '20%', marginTop:"1%", marginBottom:"1%" }}>
       {/* to add an already open item, do <Accordion defaultActiveKey="0"> */}
       <Accordion>
         <Accordion.Item eventKey="0">
@@ -54,6 +49,7 @@ const Blog = () => {
         </Accordion.Item>
       </Accordion>
     </div>
+    </>
   )
 }
 

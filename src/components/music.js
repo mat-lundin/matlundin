@@ -7,9 +7,10 @@ import "react-bootstrap-carousel/dist/react-bootstrap-carousel.css";
 export default function Music(){
     // different background image, or give whole site a background color?
    return( 
-    <div>
-    <h2 style={{display: 'flex',  justifyContent:'center', alignItems:'center', margin: '4%'}}>In my free time I use Digital Audio Workstations to create and record music. Here is some of that music:</h2>
-   <Container flex="true" style = {{color:"white", backgroundImage:"url(images/flower.jpeg)", margin: '2%'}}>
+    <>
+    <h2 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', margin:"2%" }}>In my free time I use Digital Audio Workstations (Reason, Ableton, Audacity) to create and record music.</h2>
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', margin:"25%", marginTop:"2%", marginBottom:"1%" }}>
+   <Container flex="true" style = {{color:"black",  margin: '2%', borderStyle:"solid", borderColor: 'gray', borderRadius:"3%"}}>
          <RBCarousel           
             animation={true}
             autoplay={false}
@@ -36,5 +37,6 @@ export default function Music(){
       </RBCarousel>
     </Container>
     </div>
+    </>
    )
 }
