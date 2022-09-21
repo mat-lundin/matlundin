@@ -26,10 +26,9 @@ const Blog = () => {
       })
   })
   return (
-    <div style={{background: 'linear-gradient(to bottom, #808080 0%, #FFFFFF 100%)'}}>
-        <h2 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding:"2%" }}>As I grow and learn as a developer, I'll write my thoughts here</h2>
-    <div style={{ margin: '20%', marginTop:"1%", marginBottom:"1%" }}>
-      {/* to add an already open item, do <Accordion defaultActiveKey="0"> */}
+    <div style={{background: 'linear-gradient(to bottom, #808080 0%, #FFFFFF 100%)', flex:1}}>
+        <h2 style={{ display: 'flex', flexDirection:'column', minHeight:'100vh', justifyContent: 'center', alignItems: 'center', padding:"2%" }}>As I grow and learn as a developer, I'll write my thoughts here</h2>
+    <div style={{ margin: '20%', marginTop:"1%", marginBottom:0, flexDirection:'column' }}>
       <Accordion>
         <Accordion.Item eventKey="0">
           <Accordion.Header>How Does The Regular Expression To Find an HTML Tag Work?</Accordion.Header>
