@@ -12,4 +12,8 @@ export const Button = styled.div`
    cursor: pointer;
    color: rgb(128,128,128);
    opacity: 0.4
+`;
+
+export const Background = styled.div`
+   background: 'linear-gradient(to bottom, #808080 0%, #FFFFFF 100%);
 `
