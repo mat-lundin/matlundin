@@ -5,6 +5,7 @@ import Button from 'react-bootstrap/Button';
 import projectData from '../projects.json';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
+import {Background} from './Styles';
 
 
 // have a modal or a drawer with the screenshot and links
@@ -12,8 +13,8 @@ import Tooltip from 'react-bootstrap/Tooltip';
 const dev = () => {
 
     return (
-        <>
-        <h2 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', margin:"2%" }}>Coding Projects I've Worked On</h2>
+        <div style={{background: 'linear-gradient(to bottom, #808080 0%, #FFFFFF 100%)'}}>
+        <h2 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding:"2%" }}>Coding Projects I've Worked On</h2>
         <div style={{ margin: '20%', marginTop:"1%", marginBottom:"1%" }}>
             <Table striped responsive>
                 <tbody>
@@ -58,7 +59,7 @@ const dev = () => {
                 </tbody>
             </Table>
         </div>
-        </>
+        </div>
     )
 }
 

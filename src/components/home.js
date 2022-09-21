@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card';
 const home = () => {
     return (
         // move card using margins, etc. or get rid of card in favor of straight divs
-        <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
+        <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', background: 'linear-gradient(to bottom, #808080 0%, #FFFFFF 100%)'}}>
         <Card style={{ width: '28rem', margin: '2%' }}>
             <Card.Img variant="top" src="images/headshot.jpeg" />
         <Card.Body>
