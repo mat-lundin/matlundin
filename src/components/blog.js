@@ -25,11 +25,11 @@ const Blog = () => {
           .catch(err => console.log(err))
       })
   })
+
   return (
     <div style={{background: 'linear-gradient(to bottom, #808080 0%, #FFFFFF 100%)'}}>
         <h2 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding:"2%" }}>As I grow and learn as a developer, I'll write my thoughts here</h2>
-    <div style={{ margin: '20%', marginTop:"1%", marginBottom:"5%" }}>
-      <Accordion>
+      <Accordion style={{margin: '20%', marginTop: '1%', marginBottom: '1%', minHeight:'58vh'}}>
         <Accordion.Item eventKey="0">
           <Accordion.Header>How Does The Regular Expression To Find an HTML Tag Work?</Accordion.Header>
           <Accordion.Body>
@@ -47,7 +47,6 @@ const Blog = () => {
           </Accordion.Body>
         </Accordion.Item>
       </Accordion>
-    </div>
     </div>
   )
 }
