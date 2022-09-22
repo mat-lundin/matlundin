@@ -3,6 +3,7 @@ import Markdown from 'markdown-to-jsx';
 import React, { useState, useEffect } from 'react';
 
 // concept from https://dev.to/anobjectisa/how-to-dynamically-load-markdown-files-in-react-markdown-to-jsx-53fl
+// render blog post .md files for the accordion items
 const Blog = () => {
   const [post0, setPost0] = useState('')
   const [post1, setPost1] = useState('')
@@ -27,9 +28,9 @@ const Blog = () => {
   })
 
   return (
-    <div style={{background: 'linear-gradient(to bottom, #808080 0%, #FFFFFF 100%)'}}>
-        <h2 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding:"2%" }}>As I grow and learn as a developer, I'll write my thoughts here</h2>
-      <Accordion style={{margin: '20%', marginTop: '1%', marginBottom: '1%', minHeight:'58vh'}}>
+    <div style={{ background: 'linear-gradient(to bottom, #808080 0%, #FFFFFF 100%)' }}>
+      <h2 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: "2%" }}>As I grow and learn as a developer, I'll write my thoughts here</h2>
+      <Accordion style={{ margin: '20%', marginTop: '1%', marginBottom: '1%', minHeight: '58vh' }}>
         <Accordion.Item eventKey="0">
           <Accordion.Header>How Does The Regular Expression To Find an HTML Tag Work?</Accordion.Header>
           <Accordion.Body>
