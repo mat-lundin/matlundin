@@ -9,7 +9,7 @@ export default function Music(){
    return( 
     <div style={{background: 'linear-gradient(to bottom, #808080 0%, #FFFFFF 100%)'}}>
     <h2 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding:"2%" }}>In my free time I use Digital Audio Workstations (Reason, Ableton, Audacity) to create and record music.</h2>
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', margin:"25%", marginTop:"1%", marginBottom:"1%" }}>
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', margin:"25%", marginTop:"1%", marginBottom:"1%", maxHeight: '60vh' }}>
    <Container flex="true" style = {{color:"black",  margin: '2%', borderStyle:"solid", borderColor: 'gray', borderRadius:"3%"}}>
          <RBCarousel           
             animation={true}
