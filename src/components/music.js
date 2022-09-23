@@ -11,7 +11,7 @@ export default function Music(){
       {/* make this not a heading, maybe add a Music heading if needed, then make sure footer is either totally off the screen or on */}
       <h2 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', paddingTop:"2%" }}>Stream my music free right from this page!</h2>
     <h5 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding:"0%" }}>In my free time I use Digital Audio Workstations (Reason, Ableton, Audacity) to create and record music.</h5>
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', margin:"25%", marginTop:"1%", marginBottom:"1%", maxHeight: '60vh' }}>
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', margin:"25%", marginTop:"1%", marginBottom:"5%", paddingTop:'3%', maxHeight: '60vh', minheight:'50vh' }}>
    <Container flex="true" style = {{color:"black",  margin: '2%', borderStyle:"solid", borderColor: 'gray', borderRadius:"3%"}}>
          <RBCarousel           
             animation={true}
