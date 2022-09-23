@@ -10,7 +10,7 @@ const dev = () => {
         <div style={{ background: 'linear-gradient(to bottom, #808080 0%, #FFFFFF 100%)' }}>
             <h2 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: "2%" }}>Coding Projects I've Worked On</h2>
             <div style={{ margin: '20%', marginTop: "1%", marginBottom: "1%" }}>
-                <Table striped responsive>
+                <Table striped>
                     <tbody>
                         {projectData.map((project) => {
                             const renderTooltip = (props) => (
