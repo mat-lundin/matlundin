@@ -7,11 +7,11 @@ import { IoNewspaperOutline } from "react-icons/io5";
 import { IoMusicalNoteOutline } from "react-icons/io5";
 import { IoDocumentTextOutline } from "react-icons/io5";
 
-
+// make name bigger without having nav bar itself bigger, reduce font size of nav
 const nav = () => {
   return (
     <Navbar collapseOnSelect expand="md" style={{ backgroundSize: 'cover', backgroundColor: "gray" }}>
-      <Navbar.Brand style={{ margin: 10, padding: 0, paddingLeft: "3%", color: "#FFFFFF", fontSize: "2.5em" }} href="/" >Mat Lundin</Navbar.Brand>
+      <Navbar.Brand style={{ padding: 0, paddingLeft: "3%", color: "#FFFFFF", fontSize: "3em" }} href="/" >Mat Lundin</Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" className="custom-toggler" />
       <Navbar.Collapse className="collapse navbar-collapse" id="navbarCollapse" style={{ paddingRight: "3%" }}>
 
@@ -19,15 +19,15 @@ const nav = () => {
 
           <NavLink data-toggle="collapse" data-target="#navbarCollapse" className="nav-link" activeclassname="true" to='/' style={({ isActive }) => ({
             color: isActive ? '#FFFFFF' : '#1D253F', fontSize: '2em'
-          })}><IoHome></IoHome>Home</NavLink>
+          })}><IoHome></IoHome> Home</NavLink>
 
           <NavLink data-toggle="collapse" data-target="#navbarCollapse" className="nav-link" activeclassname="true" to='/dev' style={({ isActive }) => ({
             color: isActive ? '#FFFFFF' : '#1D253F', fontSize: '2em'
-          })}><IoCodeSlashOutline></IoCodeSlashOutline>Projects&nbsp;</NavLink>
+          })}><IoCodeSlashOutline></IoCodeSlashOutline> Projects&nbsp;</NavLink>
 
           <NavLink data-toggle="collapse" data-target="#navbarCollapse" className="nav-link" activeclassname="true" to='/blog' style={({ isActive }) => ({
             color: isActive ? '#FFFFFF' : '#1D253F', fontSize: '2em'
-          })}><IoNewspaperOutline></IoNewspaperOutline>Tech Blog&nbsp;</NavLink>
+          })}><IoNewspaperOutline></IoNewspaperOutline> Tech Blog&nbsp;</NavLink>
 
           <NavLink data-toggle="collapse" data-target="#navbarCollapse" className="nav-link" activeclassname="true" to='/music' style={({ isActive }) => ({
             color: isActive ? '#FFFFFF' : '#1D253F', fontSize: '2em'

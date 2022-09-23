@@ -32,7 +32,8 @@ const Blog = () => {
       <h2 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: "2%" }}>My Thoughts About Tech and Development</h2>
       <Accordion style={{ margin: '20%', marginTop: '1%', marginBottom: '1%', minHeight: '58vh' }}>
         <Accordion.Item eventKey="0">
-          <Accordion.Header>How Does The Regular Expression To Find an HTML Tag Work?</Accordion.Header>
+          {/* new font for headers */}
+          <Accordion.Header style={{fontWeight: "bold"}}>How Does The Regular Expression To Find an HTML Tag Work?</Accordion.Header>
           <Accordion.Body>
             <Markdown>
               {post0}
@@ -40,7 +41,7 @@ const Blog = () => {
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="1">
-          <Accordion.Header>QR Codes</Accordion.Header>
+          <Accordion.Header style={{fontWeight: "bold"}}>QR Codes</Accordion.Header>
           <Accordion.Body>
             <Markdown>
               {post1}
