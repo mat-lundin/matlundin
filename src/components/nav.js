@@ -9,11 +9,12 @@ import { IoDocumentTextOutline } from "react-icons/io5";
 
 // make name bigger without having nav bar itself bigger, reduce font size of nav
 const nav = () => {
+  // a lot of weird stuff in here, compare to https://react-bootstrap.github.io/components/navbar/
   return (
-    <Navbar collapseOnSelect expand="md" style={{ backgroundSize: 'cover', backgroundColor: "gray" }}>
+    <Navbar collapseOnSelect expand="lg" style={{ backgroundSize: 'cover', backgroundColor: "gray" }}>
       <Navbar.Brand style={{ padding: 0, paddingLeft: "3%", color: "#FFFFFF", fontSize: "3em" }} href="/" >Mat Lundin</Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" className="custom-toggler" />
-      <Navbar.Collapse className="collapse navbar-collapse" id="navbarCollapse" style={{ paddingRight: "3%" }}>
+      <Navbar.Collapse className="collapse navbar-collapse" id="navbarCollapse" style={{ paddingRight: "3%" }} variant="success">
 
         <Nav className="justify-content-end" style={{ width: "100%" }}>
 
