@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card';
 const home = () => {
     return (
         // card border and maybe a shadow
-        <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', background: 'radial-gradient(circle, #808080 0%, #FFFFFF 100%)'}}>
+        <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', background: 'radial-gradient(circle, #A9A9A9 0%, #FFFFFF 100%)'}}>
         <Card style={{ width: '28rem', margin: '2%', borderStyle:'solid', borderColor:'black', borderWidth: '3px', borderRadius: '10px' }}>
             <Card.Img variant="top" src="images/headshot.jpeg" style={{borderRadius: '7px'}}/>
         <Card.Body>

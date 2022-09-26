@@ -28,7 +28,7 @@ const Blog = () => {
   })
 
   return (
-    <div style={{ background: 'linear-gradient(to bottom, #808080 0%, #FFFFFF 100%)' }}>
+    <div style={{ background: 'radial-gradient(circle, #A9A9A9 0%, #FFFFFF 100%)' }}>
       <h2 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: "2%" }}>My Thoughts About Tech and Development</h2>
       <Accordion style={{ margin: '20%', marginTop: '1%', marginBottom: '1%', minHeight: '58vh' }}>
         <Accordion.Item eventKey="0">
