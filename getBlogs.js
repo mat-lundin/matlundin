@@ -1,4 +1,9 @@
+// create JSON file of file names in /blogs
+// should this be a class?
 const fs = require('fs')
+let blogs = {
+    files:[]
+}
 
   // create array of filenames
   const blogFiles = fs.readdir('./src/blogs',(err, data)=>{
@@ -6,21 +11,24 @@ const fs = require('fs')
       console.log(err)
     }
     else {
-      console.log(data)
-      blogPostArr(data)
+      // console.log(data)
+      blogs.files = data
+      write(blogs)
     }
   });
+
+  function write(blogs){
+    const blogData = JSON.stringify(blogs);
+    fs.writeFile('./src/blogs/blogData.json', blogData, (err) => {
+      if (err)
+        console.log(err);
+      else {
+        console.log("File written successfully\n");
+        // console.log("The written has the following contents:");
+        // console.log(fs.readFileSync('.src/blogs/blogData.json', "utf8"));
+      }
+    });
+  }
   
-  const blogPostArr = function(files){
-    files.map((file)=>{
-        import(file)
-          .then(res => {
-            fetch(res.default)
-              .then(res => res.text())
-              .then(res => {return res})
-              .catch(err => console.log(err))
-          })
-      })
-    }
 
 blogFiles
