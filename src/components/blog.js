@@ -3,7 +3,7 @@ import Markdown from 'markdown-to-jsx';
 import React, { useState, useEffect } from 'react';
 import AccordionItem from 'react-bootstrap/esm/AccordionItem';
 import AccordionHeader from 'react-bootstrap/esm/AccordionHeader';
-const fs = require('fs')
+import blogFiles from '../blogs/blogData';
 
 // concept from https://dev.to/anobjectisa/how-to-dynamically-load-markdown-files-in-react-markdown-to-jsx-53fl
 // render blog post .md files for the accordion items
@@ -31,27 +31,27 @@ const Blog = () => {
   })
 
   // create array of filenames
-const blogFiles = fs.readdir('../blogs/',(err, data)=>{
-  if (err) {
-    console.log(err)
-  }
-  else {
-    console.log(data)
-    blogPostArr(data)
-  }
-});
+// const blogFiles = fs.readdir('../blogs/',(err, data)=>{
+//   if (err) {
+//     console.log(err)
+//   }
+//   else {
+//     console.log(data)
+//     blogPostArr(data)
+//   }
+// });
 
-const blogPostArr = function(files){
-  files.map((file)=>{
-      import(file)
-        .then(res => {
-          fetch(res.default)
-            .then(res => res.text())
-            .then(res => {return res})
-            .catch(err => console.log(err))
-        })
-    })
-  }
+// const blogPostArr = function(files){
+//   files.map((file)=>{
+//       import(file)
+//         .then(res => {
+//           fetch(res.default)
+//             .then(res => res.text())
+//             .then(res => {return res})
+//             .catch(err => console.log(err))
+//         })
+//     })
+//   }
 
 
   return (
@@ -76,7 +76,7 @@ const blogPostArr = function(files){
           </Accordion.Body>
         </Accordion.Item>
       </Accordion>
-      <Accordion style={{ margin: '20%', marginTop: '1%', marginBottom: '1%', minHeight: '58vh' }}>
+      {/* <Accordion style={{ margin: '20%', marginTop: '1%', marginBottom: '1%', minHeight: '58vh' }}>
       {blogPostArr.map((post)=>{
         <AccordionItem eventKey={post}>
           <AccordionHeader>posties</AccordionHeader>
@@ -85,7 +85,7 @@ const blogPostArr = function(files){
           </Accordion.Body>
         </AccordionItem>
       })}
-      </Accordion>
+      </Accordion> */}
     </div>
   )
     }
