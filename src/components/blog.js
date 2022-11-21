@@ -32,10 +32,11 @@ import AccordionBody from 'react-bootstrap/esm/AccordionBody';
 //   })
 
 
-// !!! set the state outside this function, then do useEffect and put all this in that function
+
   const Blogs = () => {
     const [posts, setPosts] = useState([])
     blogData.files.map((filename) => {
+      // useEffect cannot be used in a callback function, need to put this elsewhere
       useEffect(()=>{
         import(`../blogs/${filename}`)
         .then(res => {
@@ -77,7 +78,7 @@ import AccordionBody from 'react-bootstrap/esm/AccordionBody';
       <h2 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: "2%" }}>My Thoughts About Tech and Development</h2>
 
       <Accordion style={{ margin: '20%', marginTop: '1%', marginBottom: '1%', minHeight: '58vh' }}>
-        {Blogs.map((blog) => {
+        {posts.map((blog) => {
           return (
             <div>
             <AccordionHeader>hello</AccordionHeader>
