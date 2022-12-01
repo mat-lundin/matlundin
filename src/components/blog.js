@@ -37,6 +37,8 @@ import AccordionBody from 'react-bootstrap/esm/AccordionBody';
     const [posts, setPosts] = useState([])
     blogData.files.map((filename) => {
       // useEffect cannot be used in a callback function, need to put this elsewhere
+      // declare useEffect function to do this work upon clicking the blog button on nav
+      // https://reactjs.org/docs/hooks-effect.html first example
       useEffect(()=>{
         import(`../blogs/${filename}`)
         .then(res => {
