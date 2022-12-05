@@ -5,7 +5,7 @@ const home = () => {
         // card border and maybe a shadow
         <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', background: 'radial-gradient(circle, #808080 0%, #FFFFFF 100%)'}}>
         <Card style={{ width: '28rem', margin: '2%', borderStyle:'solid', borderColor:'black', borderWidth: '3px', borderRadius: '10px' }}>
-            <Card.Img variant="top" src="images/headshot.jpeg" style={{borderRadius: '7px'}}/>
+            <Card.Img variant="top" src={process.env.PUBLIC_URL + "images/headshot.jpeg"} style={{borderRadius: '7px'}}/>
         <Card.Body>
           <Card.Title>Mat Lundin</Card.Title>
           <Card.Subtitle className="mb-2 text-muted">Developer</Card.Subtitle>
