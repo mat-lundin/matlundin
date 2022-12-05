@@ -27,7 +27,7 @@ export default function Music(){
               <h4 style={{textAlign: 'center', marginTop: '2%'}}>{album.artist}</h4>
               <h3 style={{textAlign: 'center'}}>{album.title}</h3>
               {/* don't display link if not on bandcamp */}
-              {album.bandcampUrl === "" ? null : <h3 style={{marginBottom: '1%'}}><a href={album.bandcampUrl} target="_blank" rel="noreferrer"><img src="/images/bandcamp-logo-svgrepo-com.svg" alt="bandcamp"></img></a></h3>}
+              {album.bandcampUrl === "" ? null : <h3 style={{marginBottom: '1%'}}><a href={album.bandcampUrl} target="_blank" rel="noreferrer"><img src={process.env.PUBLIC_URL + "/images/bandcamp-logo-svgrepo-com.svg"} alt="bandcamp"></img></a></h3>}
               <img src={album.image} width='30%' alt={album.title}></img>
               <Row>
               <iframe title={album.title} style={{textAlign: 'center', fontFamily: "Work Sans", margin: '5% 15%', width: '70%', padding: '0%'}} src={album.spotEmbed} height="80" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
