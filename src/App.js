@@ -13,7 +13,6 @@ import ScrollButton from './components/ScrollButton';
 console.log(`%cDeveloped By`, '🐦;background: rgb(255,140,0); color: #444; padding: 3px; border-radius: 5px;');
 console.log(`     %cMat Lundin: matlundin.dev@gmail.com`, '🐦;background: lightblue; color: #444; padding: 3px; border-radius: 5px;');
 export default function App() {
-//  const [currentPage, setCurrentPage] = useState('home');
   return (
     <main>
       <BrowserRouter>
