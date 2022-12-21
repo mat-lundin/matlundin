@@ -7,6 +7,14 @@
 
 },
 {
+    "name":"Woodworth's Woodworks",
+    "description": "Sample company page using vanilla HTML, CSS, and JS (ok, with a pinch of Bootstrap)",
+    "url": "https://mat-lundin.github.io/DRS-takehome/",
+    "repoUrl": "https://github.com/mat-lundin/DRS-takehome",
+    "image": "/images/woodworths.gif"
+
+},
+{
     "name":"My Portfolio",
     "description": "You're looking at it! Built using React.js",
     "url": "",
@@ -16,7 +24,7 @@
 {
     "name":"Sheltr",
     "description": "A mobile first swiping app for finding your next rescue pet! Built using React.js",
-    "url": "https://sheltr-app.herokuapp.com/",
+    "url": "",
     "repoUrl": "https://github.com/mat-lundin/sheltr",
     "image": "/images/sheltr.png"
 
