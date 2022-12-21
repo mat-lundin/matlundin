@@ -18,9 +18,10 @@ export default function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/matlundin" element={<Home />}></Route>
-          <Route path='/matlundin/music' element={<Music />}></Route>
-          <Route path='matlundin/resume' element={<Resume />}></Route>
+          <Route path = "/matlundin" element={<Home />}></Route>
+          <Route path = "/matlundin/home" element={<Home />}></Route>
+          <Route path = '/matlundin/music' element={<Music />}></Route>
+          <Route path = 'matlundin/resume' element={<Resume />}></Route>
           <Route path = 'matlundin/dev' element={<Projects />}></Route>
           <Route path = 'matlundin/blog' element={<Blog />}></Route>
         </Routes>

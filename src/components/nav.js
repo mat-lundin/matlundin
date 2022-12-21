@@ -18,7 +18,7 @@ const nav = () => {
 
         <Nav className="justify-content-end" style={{ width: "100%" }}>
 
-          <NavLink data-toggle="collapse" data-target="#navbarCollapse" className="nav-link" activeclassname="true" to='/matlundin' style={({ isActive }) => ({
+          <NavLink data-toggle="collapse" data-target="#navbarCollapse" className="nav-link" activeclassname="true" to='/matlundin/home' style={({ isActive }) => ({
             color: isActive ? '#FFFFFF' : '#1D253F', fontSize: '2em'
           })}><IoHome></IoHome> Home</NavLink>
 
