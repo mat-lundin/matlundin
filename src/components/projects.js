@@ -29,7 +29,7 @@ const dev = () => {
                                     </OverlayTrigger></td>
                                     <td width="11%" style={{ fontWeight: 'bold' }}>{project.name}</td>
                                     <td width="30%">{project.description}</td>
-                                    <td width="13%"><Button style={{ marginLeft: "6%", marginTop: "10%" }} href={project.repoUrl} target="_blank">Github</Button><Button style={{ marginLeft: "6%", marginTop: "10%" }} href={project.url} target="_blank">Visit</Button></td>
+                                    <td width="13%"><Button style={{ marginLeft: "6%", marginTop: "10%" }} href={project.repoUrl} target="_blank">Github</Button>{project.url ? <Button style={{ marginLeft: "6%", marginTop: "10%" }} href={project.url} target="_blank">Visit</Button> : null} </td>
                                 </tr>
                             )
                         })}
