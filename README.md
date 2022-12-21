@@ -12,7 +12,7 @@ This is an online portfolio site, built using React.js and React-Bootstrap. Plea
 
 
 ## Visit
-To view my portfolio, go to https://matlundin.herokuapp.com/
+To view my portfolio, go to https://mat-lundin.github.io/matlundin/
 
 
 ## License
