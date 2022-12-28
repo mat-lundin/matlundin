@@ -9,8 +9,8 @@
 {
     "name":"Woodworth's Woodworks",
     "description": "Sample company page using vanilla HTML, CSS, and JS (ok, with a pinch of Bootstrap)",
-    "url": "https://mat-lundin.github.io/DRS-takehome/",
-    "repoUrl": "https://github.com/mat-lundin/DRS-takehome",
+    "url": "https://mat-lundin.github.io/woodworths/",
+    "repoUrl": "https://github.com/mat-lundin/woodworths",
     "image": "/images/woodworths.gif"
 
 },
