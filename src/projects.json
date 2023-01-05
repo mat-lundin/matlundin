@@ -15,6 +15,14 @@
 
 },
 {
+    "name":"Fight Opera",
+    "description": "Demo website for an Austin-based pro wrestling promotion, build using React.js and Bootstrap",
+    "url": "https://mat-lundin.github.io/fightopera/",
+    "repoUrl": "https://github.com/mat-lundin/fightopera",
+    "image": "/images/fightopera.png"
+
+},
+{
     "name":"My Portfolio",
     "description": "You're looking at it! Built using React.js",
     "url": "",
@@ -27,22 +35,6 @@
     "url": "",
     "repoUrl": "https://github.com/mat-lundin/sheltr",
     "image": "/images/sheltr.png"
-
-},
-{
-    "name":"Pipe Dreams!",
-    "description": "Sign up or log in to this full stack application to search for fuel using the interactive map! Or check in on what the community is saying about fuel prices with the live message board!",
-    "url": "https://pipe-dreams.herokuapp.com/",
-    "repoUrl": "https://github.com/mat-lundin/Pipe-Dreams",
-    "image": "/images/pipedreams.png"
-
-},
-{
-    "name":"TravelBuddy",
-    "description": "Search for a city to travel to and enter the dates of your trip to see live weather and activities for your trip! Previous searches are saved for future access!",
-    "url": "https://nicoledodge.github.io/TravelBuddyApp/",
-    "repoUrl": "https://github.com/mat-lundin/TravelBuddyApp",
-    "image": "/images/TravelBuddy.gif"
 
 },
 {

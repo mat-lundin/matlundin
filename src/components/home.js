@@ -11,7 +11,7 @@ const home = () => {
           <Card.Subtitle className="mb-2 text-muted">Developer</Card.Subtitle>
           {/* remove card border and have card text background accept background of page */}
           <Card.Text>
-          Full stack web developer with 10 years of experience in the tech industry seeking an opportunity to develop impactful software and continually learn on a positive, forward-thinking team. In my spare time I love bike riding, making <a href='/music'>music</a>, and of course coding!
+          Full stack web developer with 10 years of experience in the tech industry seeking an opportunity to develop impactful software and continually learn on a positive, forward-thinking team. In my spare time I love biking, making <a href='/music'>music</a>, and of course coding!
           </Card.Text>
           <Card.Link href="https://www.linkedin.com/in/mathew-lundin/">LinkedIn</Card.Link>
           <Card.Link href="https://github.com/mat-lundin">Github</Card.Link>
