@@ -7,6 +7,14 @@
 
 },
 {
+    "name":"Make A Sandwich",
+    "description": "Sandwich creation app built with React.js and React Bootstrap, using useState and useEffect hooks",
+    "url": "https://mat-lundin.github.io/makeasandwich/",
+    "repoUrl": "https://github.com/mat-lundin/makeasandwich",
+    "image": "/images/MakeASandwich.png"
+
+},
+{
     "name":"Woodworth's Woodworks",
     "description": "Sample company page using vanilla HTML, CSS, and JS (ok, with a pinch of Bootstrap)",
     "url": "https://mat-lundin.github.io/woodworths/",
@@ -16,7 +24,7 @@
 },
 {
     "name":"Fight Opera",
-    "description": "Demo website for an Austin-based pro wrestling promotion, build using React.js and Bootstrap",
+    "description": "Demo website for an Austin-based pro wrestling promotion, built using React.js and Bootstrap",
     "url": "https://mat-lundin.github.io/fightopera/",
     "repoUrl": "https://github.com/mat-lundin/fightopera",
     "image": "/images/fightopera.png"
@@ -31,7 +39,7 @@
 },
 {
     "name":"Sheltr",
-    "description": "A mobile first swiping app for finding your next rescue pet! Built using React.js",
+    "description": "A mobile first swiping app for finding your next rescue pet! Built using React.js and MUI. Heroku changed so it's no longer hosted but live demo on my local machine available on request!",
     "url": "",
     "repoUrl": "https://github.com/mat-lundin/sheltr",
     "image": "/images/sheltr.png"
