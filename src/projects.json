@@ -39,7 +39,7 @@
 },
 {
     "name":"Sheltr",
-    "description": "A mobile first swiping app for finding your next rescue pet! Built using React.js and MUI. Heroku changed so it's no longer hosted but live demo on my local machine available on request!",
+    "description": "A mobile first swiping app for finding your next rescue pet! Full stack MERN application. Heroku changed so it's no longer hosted but live demo on my local machine available on request!",
     "url": "",
     "repoUrl": "https://github.com/mat-lundin/sheltr",
     "image": "/images/sheltr.png"
